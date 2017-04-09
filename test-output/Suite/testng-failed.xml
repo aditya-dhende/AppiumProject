@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="funLocationAccess(failed)" parallel="tests">
+    <parameter name="platformVersion_" value="6.0"/>
+    <parameter name="URL_" value="127.0.0.1:4723/wd/hub"/>
+    <parameter name="UDID_" value="192.168.189.101:5555"/>
+    <parameter name="deviceName_" value="Google Nexus 6P"/>
+    <classes>
+      <class name="groupon.Test1">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="funLocationAccess"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- groupon.Test1 -->
+    </classes>
+  </test> <!-- funLocationAccess(failed) -->
+</suite> <!-- Failed suite [Suite] -->

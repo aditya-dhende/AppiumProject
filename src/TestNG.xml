@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+	<test name="funLocationAccess">
+	    <parameter name="deviceName_" value="Google Nexus 6P"></parameter>
+	    <parameter name="UDID_" value="192.168.189.101:5555"></parameter>
+	    <parameter name="platformVersion_" value="6.0"></parameter>
+	    <parameter name="URL_" value="127.0.0.1:4723/wd/hub"></parameter>
+		<classes>
+			<class name="groupon.Test1"></class>
+		</classes>
+	</test>
+	<test name="funNavigation">
+		<parameter name="deviceName_" value="Moto G"></parameter>
+		<parameter name="UDID_" value="TA93305PEZ"></parameter>
+		<parameter name="platformVersion_" value="5.1"></parameter>
+		<parameter name="URL_" value="127.0.0.1:1234/wd/hub"></parameter>
+		<classes>
+			<class name="groupon.Test2"></class>
+		</classes>
+	</test>
+</suite>
